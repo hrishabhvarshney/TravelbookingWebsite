@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <!--Font Awesome cdn link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+    <!-- custom css file link  -->
+   <link rel="stylesheet" href="css/style.css">
+</head>
+<body style="overflow: hidden;">
+    <!-- header section starts -->
+    <header class="header" data-aos="fade-down">
+        <section class="flex">
+            <a href="home.html" class="logo">Tripify</a>
+            <nav class="navbar">
+                <a href="home.html">Home</a>
+                <a href="about.html">About</a>
+                <a href="tours.html">Tours</a>
+                <a href="destination.html">Destination</a>
+                <a href="contact.html">Contact</a>
+            </nav>
+            <div id="menu-btn" class="fas fa-bars"></div>
+        </section>
+    </header>
+    <!-- header section ends -->
+    <!-- home section starts  -->
+    <div class="container home" data-aos="zoom-out">
+        <section class="flex" data-aos="zoom-in" data-aos-delay="600">
+            <form action="" method="post">
+                <h3>Search Your Tour</h3>
+                <p>Where to</p>
+                <input type="text" name="location" required maxlength="50" placeholder="Enter tour location" class="box">
+                <p>When to</p>
+                <input type="date" name="date" class="box" required>
+                <p>How many</p>
+                <input type="number" name="guests" min="1" max="10" maxlength="2" placeholder="Number of guests" required class="box">
+                <input type="Submit" value="Search Tour" name="Search" class="btn">
+            </form>
+        </section>
+    </div>
+    <!-- home section ends -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <!-- custom js file link  -->
+    <script src="javascript/script.js"></script>
+</body>
+</html>
